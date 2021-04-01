@@ -66,11 +66,10 @@ fn test_erc20_transfer_from_too_much() {
 }
 
 #[test]
-fn testvarint() {
-	let amount = 107.into();
+fn testwhitelist() {
 	let mut t = Token::deployed();
-	t.transfer(t.joe, amount, Sender(t.ali));
-	// let testvar: &str = "test var string";
-	let testvar = t.balance_of(t.joe);
+	t.add_whitelist(t.ali);
+
+	let testvar = t.balance_of(t.ali);
 	println!("{:?}", testvar);
 }
