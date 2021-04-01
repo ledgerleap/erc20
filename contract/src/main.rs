@@ -35,10 +35,10 @@ mod ERC20 {
 		set_key(&balance, tokenTotalSupply);
 		set_key("_totalSupply", tokenTotalSupply);
 		//
-		let whitelist_size: u32 = 0;
+		let whitelist_size: i32 = 0;
 		set_key("_whitelist_size", whitelist_size);
 		let whitelist_arr = [];
-		set_key("_whitelist", whitelist_arr);
+		set_key("_whitelist_arr", whitelist_arr);
 	}
 
 	#[casperlabs_method]
