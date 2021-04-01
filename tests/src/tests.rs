@@ -71,6 +71,6 @@ fn testvarint() {
 	let mut t = Token::deployed();
 	t.transfer(t.joe, amount, Sender(t.ali));
 	// let testvar: &str = "test var string";
-	let testvar: U256 = t.balance_of(t.joe);
+	let testvar = t.balance_of(t.joe);
 	println!("{:?}", testvar);
 }
