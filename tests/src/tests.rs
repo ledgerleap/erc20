@@ -69,7 +69,8 @@ fn test_erc20_transfer_from_too_much() {
 fn testwhitelist() {
 	let mut t = Token::deployed();
 	t.add_whitelist(Sender(t.ali));
-
-	let testvar = t.balance_of(t.ali);
-	println!("{:?}", testvar);
+	t.add_whitelist(Sender(t.ali));
+	t.add_whitelist(Sender(t.ali));
+	let w = t.get_whitelist();
+	println!("{:?}", w);
 }
