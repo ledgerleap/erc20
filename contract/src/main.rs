@@ -37,7 +37,7 @@ mod ERC20 {
 		//
 		let whitelist_size: u32 = 0;
 		set_key("_whitelist_size", whitelist_size);
-		let whitelist_arr: [AccountHash;whitelist_size] = [];
+		let whitelist_arr: [AccountHash;0] = [];
 		set_key("_whitelist", whitelist_arr);
 	}
 
