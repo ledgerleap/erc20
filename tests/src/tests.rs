@@ -67,6 +67,7 @@ fn test_erc20_transfer_from_too_much() {
 
 #[test]
 fn test() {
-    let testvar: &str = "test var string";
-    println!("{:?}", testvar);
+    // let testvar: &str = "test var string";
+    // println!("{:?}", testvar);
+    println!(" ---- test var string ---- ");
 }
