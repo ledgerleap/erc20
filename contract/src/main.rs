@@ -44,7 +44,7 @@ mod ERC20 {
 	#[casperlabs_method]
 	fn addWhitelist(account: AccountHash) {
 		let _whitelist_arr = get_key("_whitelist_arr");
-		_whitelist_arr.push(AccountHash);
+		_whitelist_arr.push(account);
 		set_key("_whitelist_arr", _whitelist_arr);
 		let _whitelist_size = get_key("_whitelist_size");
 		set_key("_whitelist_size", _whitelist_size + 1);
@@ -53,7 +53,7 @@ mod ERC20 {
 	#[casperlabs_method]
 	fn removeWhitelist(account: AccountHash) {
 		let _whitelist_arr = get_key("_whitelist_arr");
-		_whitelist_arr.pop(AccountHash);
+		_whitelist_arr.pop(account);
 		set_key("_whitelist_arr", _whitelist_arr);
 		let _whitelist_size = get_key("_whitelist_size");
 		set_key("_whitelist_size", _whitelist_size - 1);
