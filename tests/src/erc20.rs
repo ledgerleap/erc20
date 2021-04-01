@@ -67,7 +67,7 @@ impl Token {
 	}
 
 	pub fn get_whitelist(&self) -> i32 {
-		self.query_contract("_whitelist_size").unwrap();
+		self.query_contract("_whitelist_size").unwrap()
 	}
 
 	fn contract_hash(&self) -> Hash {
