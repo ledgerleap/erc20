@@ -64,3 +64,9 @@ fn test_erc20_transfer_from_too_much() {
     let mut t = Token::deployed();
     t.transfer_from(t.ali, t.joe, amount, Sender(t.bob));
 }
+
+#[test]
+fn test() {
+    let testvar: &str = "test var string";
+    println!("{:?}", testvar);
+}

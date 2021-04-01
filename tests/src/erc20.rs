@@ -3,9 +3,9 @@ use casper_types::{CLTyped, PublicKey, RuntimeArgs, U256, U512, account::Account
 
 pub mod token_cfg {
     use super::*;
-    pub const NAME: &str = "ERC20";
-    pub const SYMBOL: &str = "STX";
-    pub const DECIMALS: u8 = 18;
+    pub const NAME: &str = "Test Token Name";
+    pub const SYMBOL: &str = "NFT";
+    pub const DECIMALS: u8 = 9;
     pub fn total_supply() -> U256 {
         1_000.into()
     }
