@@ -5,7 +5,7 @@ build-contract:
 	cargo build --release -p contract --target wasm32-unknown-unknown
 
 test-only:
-	cargo test -p tests
+	cargo test -p tests -- --nocapture
 
 lint:
 	cargo fmt
