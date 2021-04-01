@@ -46,7 +46,7 @@ mod ERC20 {
 		// let _whitelist_arr = get_key("_whitelist_arr");
 		// _whitelist_arr.push(account);
 		// set_key("_whitelist_arr", _whitelist_arr);
-		let _whitelist_size = get_key("_whitelist_size");
+		let _whitelist_size: i32 = get_key("_whitelist_size");
 		set_key("_whitelist_size", _whitelist_size + 1);
 	}
 
@@ -55,7 +55,7 @@ mod ERC20 {
 		// let _whitelist_arr = get_key("_whitelist_arr");
 		// _whitelist_arr.pop(account);
 		// set_key("_whitelist_arr", _whitelist_arr);
-		let _whitelist_size = get_key("_whitelist_size");
+		let _whitelist_size: i32 = get_key("_whitelist_size");
 		set_key("_whitelist_size", _whitelist_size - 1);
 	}
 
